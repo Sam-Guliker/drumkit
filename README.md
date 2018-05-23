@@ -10,8 +10,11 @@
 - [Feature detection](#feature-dectection)
 - [ES6 to ES5](#es6-to-es5)
 - [Feature Support](#feature-support)
-- [Device Lab]()
-- [Recources]()
+- [Browser testing](#browser-testing)
+- [Device Lab](#device-lab)
+- [Accessibility](#accessibility)
+- [Colour and contrast](#colour-and-contrast)
+- [Recources](#recources)
 
 # Getting Started
 How to get started with this project:
@@ -21,6 +24,11 @@ How to get started with this project:
 3. Run `npm start` to start the server
 4. Go to [http://localhost:4000/](http://localhost:4000/)
 
+# Features
+The following is possible with this app
+* Playing with a drumkit. With the keyboard or mouse-click
+* Recording and playing back the sounds.
+* Downloading the audio clip you've made and name it(Enhancement)
 
 # Core functionality
 The core functionality of my page will be to play on the drumkit.
@@ -31,7 +39,7 @@ With the enhancement you can record, playback and download the audio file that y
 ![recording](images/recording.gif)
 
 # Feature detection
-I've checked on the audio web api.
+I've checked on the audio web api.  
 `if` the browser/window does support the AudioContext and the navigator you can use the enhancment.
 
 ```Javascript
@@ -74,7 +82,7 @@ for (var i = 0; i < keys.length; i++){
 ```
 # Feature support
 `this` will be about what gets supported in different browsers. And why I've used  
-some of the tags(this is self explornatary since I just want to have a good support :smileyface:)
+some of the tags(this is self explornatary since I just want to have a good support :smileyface:
 
 ### Audio Element
 The audio element is a strong element to use, it got great support.
@@ -107,14 +115,37 @@ getUserMedia got the same story as Web Audio API.
 #### Support
 ![Web Audio API](images/getuser.png)
 
+# Browser Testing
+### Chrome
+Firefox also can handle the enhancement  
+![chrome-browser](images/chrome.png)
+Firefox also can handle the enhancement  
+![firefox-browser](images/firefox.png)
+Safari doesn't seem to like the api.
+![safari-browser](images/safari.png)
 
+# Device Lab
+Testing on different devices in device lab.  
+The ones that weren't able to record sound: 
 
-## Accessibility
-The user can use the tabs to navigate if he or she has to.
-When the javascript works there is no reason to use tabs, you
-can enjoy the enhancement! :smile:
+![dev-two](images/tinified/2.jpg)
+![dev-four](images/tinified/4.jpg)
+![dev-five](images/tinified/5.jpg)
+![dev-six](images/tinified/6.jpg)
 
-## Colour and contrast
+The one's I couldn't test: 
+I think the latest tablets would be able to record, unfortunatly I'm not sure about this.
+![dev-three](images/tinified/3.jpg)
+![dev-seven](images/tinified/7.jpg)
+![dev-eight](images/tinified/8.jpg)
+
+The one's that could use the enhancement:
+![dev-one](images/tinified/1.jpg)
+
+# Accessibility
+You can tab through the navigation, and the buttons will help you with recording or stopping the recording. This will only be usefull.
+
+# Colour and contrast
 Chrome also has its own contrast checker.  
 I first used `F16562` as an highlight colour, but I found out  
 that it doesn't have enough contrast with my background.
@@ -123,5 +154,7 @@ I used `#FF726F` instead.
 ![color contrast](images/colorcontrast.png)
 
 # Recources
-http://codeartists.com/post/36746402258/how-to-record-audio-in-chrome-with-native-html5
-
+* [Navigator](http://codeartists.com/post/36746402258/how-to-record-audio-in-chrome-with-native-html5)
+* [Webaudio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+* [Blob](http://qnimate.com/an-introduction-to-javascript-blobs-and-file-interface/)
+* [Heroku](https://www.heroku.com/home)
