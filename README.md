@@ -13,7 +13,7 @@ Enhanced
 - [Features](#features)
 - [Core functionality](#core-functionality)
 - [Enhancement](#enhancement)
-- [Feature detection](#feature-dectection)
+- [Feature detection](#feature-detection)
 - [ES6 to ES5](#es6-to-es5)
 - [Feature Support](#feature-support)
 - [Browser testing](#browser-testing)
