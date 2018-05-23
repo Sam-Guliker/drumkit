@@ -4,10 +4,9 @@ const bodyParser = require('body-parser');
 const pug = require('pug')
 const favicon = require('serve-favicon');
 
-
 const app = express()
 
-app.use(favicon(__dirname + '../public/images/favicon.ico'));
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
