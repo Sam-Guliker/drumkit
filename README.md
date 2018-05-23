@@ -1,4 +1,6 @@
 ## Opdracht 3 - Progressive Enhanced Browser Technologies
+`This` project will show abit about feature dectection and different topics in Browser-tech.
+I've made an drumkit app with different layers in the app.
 
 :fire:[The App](https://afternoon-fjord-39549.herokuapp.com/):fire:  
 
