@@ -1,5 +1,11 @@
 ## Opdracht 3 - Progressive Enhanced Browser Technologies
-![example](images/example.gif)
+
+:fire:[The App](https://afternoon-fjord-39549.herokuapp.com/):fire:  
+
+Not enhanced  
+![example](images/example.gif)  
+Enhanced  
+![example](images/recording.gif)
 
 
 # Table of Content
@@ -124,6 +130,11 @@ Firefox also can handle the enhancement
 Safari doesn't seem to like the api.
 ![safari-browser](images/safari.png)
 
+It breaks on IE8
+![IE8](images/ie8.png)
+but works on IE9
+![IE9](images/ie9.png)
+
 # Device Lab
 Testing on different devices in device lab.  
 The ones that weren't able to record sound: 
@@ -158,3 +169,8 @@ I used `#FF726F` instead.
 * [Webaudio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 * [Blob](http://qnimate.com/an-introduction-to-javascript-blobs-and-file-interface/)
 * [Heroku](https://www.heroku.com/home)
+
+
+## Lisence
+Copyright © 2018 Sam Guliker.  
+Released under the [MIT license](https://opensource.org/licenses/MIT)
