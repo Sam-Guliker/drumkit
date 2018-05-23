@@ -93,7 +93,7 @@ some of the tags(this is self explornatary since I just want to have a good supp
 ### Audio Element
 The audio element is a strong element to use, it got great support.
 
-![audioelement](images/audioelement.png)
+![audio-element](images/audioelement.png)
 
 ### ES5
 I've written all my code in ES5 so the browsers that can be supported will get the good ol' javascript :wink:.
@@ -154,7 +154,18 @@ The one's that could use the enhancement:
 ![dev-one](images/tinified/1.jpg)
 
 # Accessibility
-You can tab through the navigation, and the buttons will help you with recording or stopping the recording. This will only be usefull.
+I've added tab indexes to the code so you can tab through the sounds.  
+The other solution would be instead of KBD using buttons.
+
+KBD: 
+> The HTML Keyboard Input element (<kbd>) represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a <kbd> element using its default monospace font, although this is not mandated by the HTML standard.
+-[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd)
+```pug
+li(data-key="65" tabindex="1").key
+        kbd A 
+        audio(data-key='65' src='sounds/clap.wav' controls='controls')
+        span.sound clap
+```
 
 # Colour and contrast
 Chrome also has its own contrast checker.  
@@ -169,6 +180,7 @@ I used `#FF726F` instead.
 * [Webaudio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 * [Blob](http://qnimate.com/an-introduction-to-javascript-blobs-and-file-interface/)
 * [Heroku](https://www.heroku.com/home)
+* [Kbd](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd)
 
 
 ## Lisence
