@@ -1,0 +1,164 @@
+html {
+  background-color: #2e2e2e;
+}
+*:focus{
+  transform: scale(1)
+}
+body{
+  display: flex;
+  font-family: sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h1{
+  margin-top:2rem;
+  color:white;
+  text-align: center;
+  font-size: 2rem;
+  animation-name: rotatey 0.4s ease-in-out;
+}
+main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width:40em;
+  margin: auto;
+}
+article {
+  margin: 1em 0;
+  padding: 1.25em;
+  transition: 0.4s all ease-in-out;
+  animation: fade-in-up 0.4s forwards;
+  background: #fff;
+}
+article h2 {
+  margin-top: 0;
+}
+button {
+  position: relative;
+  padding: 1em 2em;
+  border: none;
+  background: #fff;
+  margin-left: 2em;
+  box-shadow: 
+    0 1px 3px rgba(0,0,0,0.12), 
+    0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+button:hover,
+button:focus {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+button:first-of-type {
+  margin: 0;
+}
+.record:before {
+  content:url('../images/recording.svg');
+  display: block;
+  transform: scale(0.4);
+}
+.active {
+}
+.active:before{
+  animation: recording 1s ease-in-out infinite;
+  animation-direction: alternate;
+}
+.stopRecord:before {
+  content:url('../images/done.svg');
+  display: block;
+  transform: scale(0.4);
+}
+div {
+  text-align: center;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type:none;
+  text-align: center;
+}
+
+.key {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  animation-name: rotatey 0.4s ease-in-out;
+}
+
+.playing {
+  transform: scale(2);
+  border-color: #ff726f;
+  color:#ff726f;
+}
+
+kbd {
+  display: block;
+  font-size: 3rem;
+}
+
+.sound {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ff726f;
+}
+
+img {
+  transition: all 0.4s ease-in-out;
+  display: block;
+  width:50px;
+  margin:auto;
+}
+img:hover {
+  transform: rotatey(180deg);
+}
+/* video {
+  display: none;
+} */
+
+@keyframes rotatey {
+  to {
+    transform: rotatey(180deg);
+  }
+}
+
+@media(max-width:30em){
+  .key{
+    display: block;
+    margin: auto;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(-10%, 0, 0);
+
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes recording {
+  from {
+    transform: scale(0.4)
+  }
+  to { 
+    transform: scale(0.8)
+  }
+}
