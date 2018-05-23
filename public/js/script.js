@@ -16,7 +16,6 @@ function removeAudioControlls() {
 removeAudioControlls()
 
 function playSound(e) {
-  //http://codeartists.com/post/36746402258/how-to-record-audio-in-chrome-with-native-html5
   var keycode = e.keyCode ? e.keyCode : e.target.getAttribute('data-key')
   var audio = document.querySelector("audio[data-key=" + "'" + keycode + "'" + "]");
   var key = document.querySelector(".key[data-key=" + "'" + keycode + "'" + "]");
@@ -90,10 +89,7 @@ function audioCheck() {
     navigator.mediaDevices.getUserMedia(constraints).then(onSuccess, onError);
   }
 
-  // stopButton.addEventListener('click', stopRecording)
-
   var onSuccess = function(stream) {
-    // Thanks to mees. https://github.com/meesrutten/browser-technologies/blob/master/opdracht3/scripts/main.js
     // Starts recording
     console.log("I'm recording")
     var mediaRecorder = new MediaRecorder(stream);
@@ -107,13 +103,13 @@ function audioCheck() {
     mediaRecorder.onstop = function(e) {
       isRecording = false
       recordButton.classList.remove('active')
-      var clipName = prompt('Enter a name for your sound clip?', 'My unnamed clip');
+      var audioName = prompt('Enter a name for your sound clip?', 'My unnamed clip');
 
 			var blob = new Blob(chunks, { 'type': 'audio/ogg; codecs=opus' });
 			chunks = [];
 			var audioURL = window.URL.createObjectURL(blob);
 
-      playBack.insertAdjacentHTML('beforeend', '<article class="clip" id="' + clipName + '"><h2>' + clipName + '</h2><audio controls="" src="' + audioURL + '"></audio></article>');
+      playBack.insertAdjacentHTML('beforeend', '<article class="clip" id="' + audioName + '"><h2>' + audioName + '</h2><audio controls="" src="' + audioName + '"></audio></article>');
 
     }
     

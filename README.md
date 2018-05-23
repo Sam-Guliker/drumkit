@@ -1,29 +1,32 @@
 ## Opdracht 3 - Progressive Enhanced Browser Technologies
 ![example](images/example.gif)
-## Core functionality
-The core functionality of my page will be to play sounds
-through the web browser.
 
-## Enhancement
-When you can run javascript you've got the power to play a drumkit.  
-The drumkit allows you to make a beat however you want! :sunglasses:
 
-## Feature detections
-I've used most of the mast basic javascript to prevent the feature   
-issues by browsers. I used some of the most basic JS functions that work in  
-every browser no matter what version or what browser there is.
+# Table of Content
+- [Getting started](#getting-started)
+- [Features](#features)
+- [Core functionality](#core-functionality)
+- [Enhancement](#enhancement)
+- [Feature detection](#feature-dectection)
+- [ES6 to ES5](#es6-to-es5)
+- [Feature Support](#feature-support)
+- [Browser Support]()
+- [Device Lab]()
+- [Recources]()
 
-### Feature detection
-Will check if the `addEventListener` is accessible in the document.  
-If it isn't in the document use the attachEvent.
+# Core functionality
+The core functionality of my page will be to play on the drumkit.
+
+# Enhancement
+With the enhancement you can record, playback and download the audio file that you've created!:sunglasses:
+
+# Feature detection
+I've checked on the audio web api.
+`if` the browser does support the AudioContext adn the navigator you can use the enhancment.
 ```Javascript
-function onClickEvent(el, item){
-  if (document.addEventListener) {
-    el.addEventListener('keydown', item);
-  } else {
-    el.attachEvent('keydown', item);
+  if (AudioContext && navigator.mediaDevices.getuserMedia in window) {
+    audioCheck()
   }
-}
 ```
 
 ### ES6 to ES5
@@ -58,7 +61,7 @@ for (var i = 0; i < keys.length; i++){
 
 
 ```
-## Feature support
+# Feature support
 
 ### Audio Element
 The audio element is a strong element to use, it got great support.
@@ -92,3 +95,7 @@ that it doesn't have enough contrast with my background.
 I used `#FF726F` instead.
 
 ![color contrast](images/colorcontrast.png)
+
+# Recources
+http://codeartists.com/post/36746402258/how-to-record-audio-in-chrome-with-native-html5
+
