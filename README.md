@@ -10,9 +10,17 @@
 - [Feature detection](#feature-dectection)
 - [ES6 to ES5](#es6-to-es5)
 - [Feature Support](#feature-support)
-- [Browser Support]()
 - [Device Lab]()
 - [Recources]()
+
+# Getting Started
+How to get started with this project:
+
+1. Clone the repo with `git clone https://github.com/Sam-Guliker/drumkit` or download it from github
+2. Run `npm install` to install the dependencies
+3. Run `npm start` to start the server
+4. Go to [http://localhost:4000/](http://localhost:4000/)
+
 
 # Core functionality
 The core functionality of my page will be to play on the drumkit.
@@ -20,9 +28,12 @@ The core functionality of my page will be to play on the drumkit.
 # Enhancement
 With the enhancement you can record, playback and download the audio file that you've created!:sunglasses:
 
+![recording](images/recording.gif)
+
 # Feature detection
 I've checked on the audio web api.
-`if` the browser does support the AudioContext adn the navigator you can use the enhancment.
+`if` the browser/window does support the AudioContext and the navigator you can use the enhancment.
+
 ```Javascript
   if (AudioContext && navigator.mediaDevices.getuserMedia in window) {
     audioCheck()
@@ -62,6 +73,8 @@ for (var i = 0; i < keys.length; i++){
 
 ```
 # Feature support
+`this` will be about what gets supported in different browsers. And why I've used  
+some of the tags(this is self explornatary since I just want to have a good support :smileyface:)
 
 ### Audio Element
 The audio element is a strong element to use, it got great support.
@@ -81,6 +94,19 @@ To make sure I was using the most supported code for javascript I'm using code l
 #### Support
 
 ![dom](images/dom.png)
+
+### Web Audio API
+Web Audio API doesn't have such a great support, This is why I've used it as an enhancement. 
+
+#### Support
+![Web Audio API](images/webaudio.png)
+
+### getUserMedia
+getUserMedia got the same story as Web Audio API.
+
+#### Support
+![Web Audio API](images/getuser.png)
+
 
 
 ## Accessibility
