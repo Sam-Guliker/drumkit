@@ -189,7 +189,7 @@ I've added tab indexes to the code so you can tab through the sounds.
 The other solution would be instead of KBD using buttons.
 
 KBD: 
-> The HTML Keyboard Input element (<kbd>) represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a <kbd> element using its default monospace font, although this is not mandated by the HTML standard.
+> The HTML Keyboard Input element <kbd> represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a <kbd> element using its default monospace font, although this is not mandated by the HTML standard.
 -[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd)
 ```pug
 li(data-key="65" tabindex="1").key
