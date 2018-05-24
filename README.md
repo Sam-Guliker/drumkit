@@ -121,19 +121,48 @@ getUserMedia got the same story as Web Audio API.
 #### Support
 ![Web Audio API](images/getuser.png)
 
+### audio tag
+Audio tag is supported on IE9 and other browsers.
+Unfortunatly it doesn't support IE8.
+#### Support
+![audiotag](images/audio.png)
+
+### classList
+Classlist isn't that greatly supported on IE 8 & 9. 
+No animations for them.
+
+#### Support
+![classList](images/classlist.png)
+
+### QuerySelector
+Query selector wordt ondersteund tot de versie die ik wil ondersteunen van IE.
+
+#### Support
+![querySelector](images/qs.png)
+
+### ternary operator
+ternary operator got a good support on browsers
+
+#### Support
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+
+
+
 # Browser Testing
-### Chrome
-Firefox also can handle the enhancement  
+### Chrome v66
+Chrome can handle the enhancement 
 ![chrome-browser](images/chrome.png)
 Firefox also can handle the enhancement  
 ![firefox-browser](images/firefox.png)
 Safari doesn't seem to like the api.
-![safari-browser](images/safari.png)
+[safari-browser](images/safari.png)
 
 It breaks on IE8
 ![IE8](images/ie8.png)
 but works on IE9
 ![IE9](images/ie9.png)
+Op IE the classlists won't work, so no fancy animations. 
+The Audio element doesn't work on IE 8. My latest support for IE is IE 9.
 
 # Device Lab
 Testing on different devices in device lab.  
