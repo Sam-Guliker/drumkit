@@ -92,6 +92,8 @@ for (var i = 0; i < keys.length; i++){
 `this` will be about what gets supported in different browsers. And why I've used  
 some of the tags(this is self explornatary since I just want to have a good support :smileyface:
 
+Btw use MP3 files and not WAV. MP3 files are supported on every browser and wav isn't.
+
 ### Audio Element
 The audio element is a strong element to use, it got great support.
 
@@ -154,11 +156,14 @@ ternary operator got a good support on browsers
 ### Chrome v66
 Chrome can handle the enhancement 
 ![chrome-browser](images/chrome.png)
+### Firefox v60
 Firefox also can handle the enhancement  
 ![firefox-browser](images/firefox.png)
+### Safari v11
 Safari doesn't seem to like the api.
 [safari-browser](images/safari.png)
 
+### Internet Explorer
 It breaks on IE8
 ![IE8](images/ie8.png)
 but works on IE9
