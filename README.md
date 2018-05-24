@@ -9,7 +9,6 @@ Not enhanced
 Enhanced  
 ![example](images/recording.gif)
 
-
 # Table of Content
 - [Getting started](#getting-started)
 - [Features](#features)
@@ -161,7 +160,7 @@ Firefox also can handle the enhancement
 ![firefox-browser](images/firefox.png)
 ### Safari v11
 Safari doesn't seem to like the api.
-[safari-browser](images/safari.png)
+![safari-browser](images/safari.png)
 
 ### Internet Explorer
 It breaks on IE8
