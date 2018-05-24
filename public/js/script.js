@@ -22,7 +22,7 @@ function playSound(e) {
 
   if (!audio) return; // stopt de functie
 
-  audio.currentTime = 0; // rewind to the start
+  audio.load(); // rewind to the start
   audio.play();
 
   key.classList.add('playing')
@@ -38,15 +38,26 @@ for (var x = 0; x < keys.length; x++) {
 }
 
 for (var i = 0; i < keys.length; i++) {
-  keys[i].addEventListener('click', playSound)
-  keys[i].addEventListener('focus', playSound)
+  if(window.addEventListener){
+    keys[i].addEventListener('click', playSound)
+    keys[i].addEventListener('focus', playSound)
+  } else{
+    keys[i].attachEvent('onclick',playSound)
+  }
 }
 
-window.addEventListener('keydown', playSound);
+if(window.addEventListener){
+  window.addEventListener('keydown', playSound);
+} else {
+  window.attachEvent('onkeydown', playSound)
+}
+
 
 // Enhancement
 if (AudioContext && navigator.mediaDevices.getuserMedia in window) {
   audioCheck()
+} else {
+  console.log("I'm sorry your browser doesn't support fun")
 }
 
 function audioCheck() {
