@@ -187,6 +187,7 @@ I think the latest tablets would be able to record, unfortunatly I'm not sure ab
 
 The one's that could use the enhancement:
 ![dev-one](images/tinified/1.jpg)
+![werkt](images/tinified/werkt.jpg)
 
 # Accessibility
 I've added tab indexes to the code so you can tab through the sounds.  
