@@ -21,6 +21,7 @@ Enhanced
 - [Device Lab](#device-lab)
 - [Accessibility](#accessibility)
 - [Colour and contrast](#colour-and-contrast)
+- [Wish List](#wish-list)
 - [Recources](#recources)
 
 # Getting Started
@@ -138,7 +139,7 @@ No animations for them.
 ![classList](images/classlist.png)
 
 ### QuerySelector
-Query selector wordt ondersteund tot de versie die ik wil ondersteunen van IE.
+Query selector does have a nice support.
 
 #### Support
 ![querySelector](images/qs.png)
@@ -148,8 +149,6 @@ ternary operator got a good support on browsers
 
 #### Support
 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
-
-
 
 # Browser Testing
 ### Chrome v66
@@ -210,6 +209,10 @@ that it doesn't have enough contrast with my background.
 I used `#FF726F` instead.
 
 ![color contrast](images/colorcontrast.png)
+
+# Wishlist
+- [ ] IE 8 support
+- [ ] Enhancement werkend op
 
 # Recources
 * [Navigator](http://codeartists.com/post/36746402258/how-to-record-audio-in-chrome-with-native-html5)
