@@ -180,11 +180,9 @@ The ones that weren't able to record sound:
   <img src="images/tinified/6.jpg" />
 </details>
 
-The one's I couldn't test: 
-I think the latest tablets would be able to record, unfortunatly I'm not sure about this.
-
 <details>
-  <summary>No Test results</summary>
+  <summary>The one's I couldn't test: 
+I think the latest tablets would be able to record, unfortunatly I'm not sure about this.</summary>
   <img src="images/tinified/3.jpg" />
   <img src="images/tinified/7.jpg" />
   <img src="images/tinified/8.jpg" />
