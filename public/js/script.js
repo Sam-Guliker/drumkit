@@ -112,16 +112,16 @@ function audioCheck() {
     })
 
     mediaRecorder.onstop = function(e) {
-      isRecording = false;
-      recordButton.classList.remove('active');
-      var clipName = prompt('Enter a name for your sound clip?', 'My unnamed clip');
+
+      isRecording = false
+      recordButton.classList.remove('active')
+      var audioName = prompt('Enter a name for your sound clip?', 'My unnamed clip');
 
       var blob = new Blob(chunks, { 'type': 'audio/ogg; codecs=opus' });
       chunks = [];
       var audioURL = window.URL.createObjectURL(blob);
 
-
-      playBack.insertAdjacentHTML('beforeend', '<article class="clip" id="' + clipName + '"><h2>' + clipName + '</h2><audio controls="" src="' + clipName + '"></audio></article>');
+      playBack.insertAdjacentHTML('beforeend', '<article class="clip" id="' + audioName + '"><h2>' + audioName + '</h2><audio controls="" src="' + audioURL + '"></audio></article>');
 
     }
 

@@ -21,6 +21,7 @@ Enhanced
 - [Device Lab](#device-lab)
 - [Accessibility](#accessibility)
 - [Colour and contrast](#colour-and-contrast)
+- [Wish List](#wish-list)
 - [Recources](#recources)
 
 # Getting Started
@@ -84,8 +85,6 @@ for (var i = 0; i < keys.length; i++){
   keys[i].addEventListener('click', playSound)
 }
 
-
-
 ```
 # Feature support
 `this` will be about what gets supported in different browsers. And why I've used  
@@ -138,7 +137,7 @@ No animations for them.
 ![classList](images/classlist.png)
 
 ### QuerySelector
-Query selector wordt ondersteund tot de versie die ik wil ondersteunen van IE.
+Query selector does have a nice support.
 
 #### Support
 ![querySelector](images/qs.png)
@@ -148,8 +147,6 @@ ternary operator got a good support on browsers
 
 #### Support
 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
-
-
 
 # Browser Testing
 ### Chrome v66
@@ -174,20 +171,28 @@ The Audio element doesn't work on IE 8. My latest support for IE is IE 9.
 Testing on different devices in device lab.  
 The ones that weren't able to record sound: 
 
-![dev-two](images/tinified/2.jpg)
-![dev-four](images/tinified/4.jpg)
-![dev-five](images/tinified/5.jpg)
-![dev-six](images/tinified/6.jpg)
+<details>
+  <summary>No recording available</summary>
+  <img src="images/tinified/2.jpg" />
+  <img src="images/tinified/4.jpg" />
+  <img src="images/tinified/5.jpg" />
+  <img src="images/tinified/2.jpg" />
+  <img src="images/tinified/6.jpg" />
+</details>
 
-The one's I couldn't test: 
-I think the latest tablets would be able to record, unfortunatly I'm not sure about this.
-![dev-three](images/tinified/3.jpg)
-![dev-seven](images/tinified/7.jpg)
-![dev-eight](images/tinified/8.jpg)
+<details>
+  <summary>The one's I couldn't test: 
+I think the latest tablets would be able to record, unfortunatly I'm not sure about this.</summary>
+  <img src="images/tinified/3.jpg" />
+  <img src="images/tinified/7.jpg" />
+  <img src="images/tinified/8.jpg" />
+</details>
 
-The one's that could use the enhancement:
-![dev-one](images/tinified/1.jpg)
-![werkt](images/tinified/werkt.jpg)
+<details>
+  <summary>The one's that could use the enhancement:</summary>
+  <img src="images/tinified/1.jpg" />
+  <img src="images/tinified/werkt.jpg" />
+</details>
 
 # Accessibility
 I've added tab indexes to the code so you can tab through the sounds.  
@@ -210,6 +215,10 @@ that it doesn't have enough contrast with my background.
 I used `#FF726F` instead.
 
 ![color contrast](images/colorcontrast.png)
+
+# Wishlist
+- [ ] IE 8 support
+- [ ] Enhancement working on lower versions of browsers
 
 # Recources
 * [Navigator](http://codeartists.com/post/36746402258/how-to-record-audio-in-chrome-with-native-html5)
