@@ -86,7 +86,7 @@ function audioCheck() {
   recordButton.setAttribute('class', 'record');
   stopButton.innerHTML = 'stop';
   stopButton.setAttribute('class', 'stopRecord');
-  
+
   main.append(div);
   div.append(recordButton, stopButton, playBack);
   recordButton.addEventListener('click', startRecording);
@@ -112,23 +112,23 @@ function audioCheck() {
     })
 
     mediaRecorder.onstop = function(e) {
-      isRecording = false;
-      recordButton.classList.remove('active');
+      isRecording = false
+      recordButton.classList.remove('active')
       var audioName = prompt('Enter a name for your sound clip?', 'My unnamed clip');
 
-			var blob = new Blob(chunks, { 'type': 'audio/ogg; codecs=opus' });
-			chunks = [];
-			var audioURL = window.URL.createObjectURL(blob);
+      var blob = new Blob(chunks, { 'type': 'audio/ogg; codecs=opus' });
+      chunks = [];
+      var audioURL = window.URL.createObjectURL(blob);
 
-      playBack.insertAdjacentHTML('beforeend', '<article class="clip" id="' + audioName + '"><h2>' + audioName + '</h2><audio controls="" src="' + audioName + '"></audio></article>');
+      playBack.insertAdjacentHTML('beforeend', '<article class="clip" id="' + audioName + '"><h2>' + audioName + '</h2><audio controls="" src="' + audioURL + '"></audio></article>');
 
     }
-    
+
     mediaRecorder.ondataavailable = function(e) {
       chunks.push(e.data);
       console.log(chunks);
     }
-  
+
   }
 
     var onError = function(err) {
