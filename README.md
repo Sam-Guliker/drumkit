@@ -212,7 +212,7 @@ I used `#FF726F` instead.
 
 # Wishlist
 - [ ] IE 8 support
-- [ ] Enhancement werkend op
+- [ ] Enhancement working on lower versions of browsers
 
 # Recources
 * [Navigator](http://codeartists.com/post/36746402258/how-to-record-audio-in-chrome-with-native-html5)
